@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import StoreTest from './pages/StoreTest'
+import WeightPage from './pages/WeightPage'
 
 function HomePage() {
   return (
@@ -17,7 +18,9 @@ function App() {
     <div className="min-h-screen bg-gray-50 max-w-lg mx-auto flex flex-col">
       {/* 内容区域 */}
       <main className="flex-1">
-        {currentPage === 'test' ? <StoreTest /> : <HomePage />}
+        {currentPage === 'home' && <HomePage />}
+        {currentPage === 'weight' && <WeightPage />}
+        {currentPage === 'test' && <StoreTest />}
       </main>
 
       {/* 底部导航 */}
