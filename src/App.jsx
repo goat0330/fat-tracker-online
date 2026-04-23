@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import StoreTest from './pages/StoreTest'
 import WeightPage from './pages/WeightPage'
+import WorkoutPage from './pages/WorkoutPage'
 
 function HomePage() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <main className="flex-1">
         {currentPage === 'home' && <HomePage />}
         {currentPage === 'weight' && <WeightPage />}
+        {currentPage === 'workout' && <WorkoutPage />}
         {currentPage === 'test' && <StoreTest />}
       </main>
 
