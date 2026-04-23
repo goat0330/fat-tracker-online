@@ -1,6 +1,6 @@
 import { useState } from 'react'
+import StoreTest from './pages/StoreTest'
 
-// 页面组件（暂未开发，占位）
 function HomePage() {
   return (
     <div className="p-4 text-center text-gray-500">
@@ -17,7 +17,7 @@ function App() {
     <div className="min-h-screen bg-gray-50 max-w-lg mx-auto flex flex-col">
       {/* 内容区域 */}
       <main className="flex-1">
-        <HomePage />
+        {currentPage === 'test' ? <StoreTest /> : <HomePage />}
       </main>
 
       {/* 底部导航 */}
@@ -49,6 +49,15 @@ function App() {
           >
             <span className="text-lg">💪</span>
             训练
+          </button>
+          <button
+            onClick={() => setCurrentPage('test')}
+            className={`flex flex-col items-center px-4 py-1 text-xs ${
+              currentPage === 'test' ? 'text-emerald-600' : 'text-gray-400'
+            }`}
+          >
+            <span className="text-lg">🔧</span>
+            测试
           </button>
         </div>
       </nav>
