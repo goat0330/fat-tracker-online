@@ -2,15 +2,7 @@ import { useState } from 'react'
 import StoreTest from './pages/StoreTest'
 import WeightPage from './pages/WeightPage'
 import WorkoutPage from './pages/WorkoutPage'
-
-function HomePage() {
-  return (
-    <div className="p-4 text-center text-gray-500">
-      <p>情侣减脂打卡助手</p>
-      <p className="text-sm mt-2">数据加载中...</p>
-    </div>
-  )
-}
+import HomePage from './pages/HomePage'
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home')

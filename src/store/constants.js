@@ -1,7 +1,7 @@
 // 双人用户信息
 const USERS = [
-  { id: 'user_me', name: '我', avatar: '🧑' },
-  { id: 'user_gf', name: '女朋友', avatar: '👩' },
+  { id: 'user_me', name: '驰', avatar: '🧑' },
+  { id: 'user_gf', name: '蔓', avatar: '👩' },
 ]
 
 // 固定训练部位（不可增删）
