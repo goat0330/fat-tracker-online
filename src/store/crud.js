@@ -100,5 +100,5 @@ export async function getAllWorkoutsForAllUsers() {
  */
 export async function deleteWorkout(userId, date) {
   const db = await getDB()
-  await db.delete(STORES.WEIGHTS, [userId, date])
+  await db.delete(STORES.WORKOUTS, [userId, date])
 }

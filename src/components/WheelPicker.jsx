@@ -114,9 +114,9 @@ export default function WheelPicker({ value, onChange }) {
       onMouseDown={onMouseDown}
     >
       {/* 上遮罩 */}
-      <div className="absolute top-0 left-0 right-0 z-10 pointer-events-none" style={{ height: `${ITEM_HEIGHT * PAD_ITEMS}px`, background: 'linear-gradient(to bottom, rgba(250,250,250,1) 0%, rgba(250,250,250,0) 100%)' }} />
+      <div className="absolute top-0 left-0 right-0 z-10 pointer-events-none" style={{ height: `${ITEM_HEIGHT * PAD_ITEMS}px`, background: 'linear-gradient(to bottom, rgba(249,250,251,1) 0%, rgba(249,250,251,0) 100%)' }} />
       {/* 下遮罩 */}
-      <div className="absolute bottom-0 left-0 right-0 z-10 pointer-events-none" style={{ height: `${ITEM_HEIGHT * PAD_ITEMS}px`, background: 'linear-gradient(to top, rgba(250,250,250,1) 0%, rgba(250,250,250,0) 100%)' }} />
+      <div className="absolute bottom-0 left-0 right-0 z-10 pointer-events-none" style={{ height: `${ITEM_HEIGHT * PAD_ITEMS}px`, background: 'linear-gradient(to top, rgba(249,250,251,1) 0%, rgba(249,250,251,0) 100%)' }} />
       {/* 选中高亮条 */}
       <div
         className="absolute left-0 right-0 z-0 border-y-2 border-emerald-400 bg-emerald-50"
