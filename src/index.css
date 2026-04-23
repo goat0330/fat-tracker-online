@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* 全局基础样式 - 移动端优先 */
+:root {
+  --color-primary: #10b981;
+  --color-primary-dark: #059669;
+  --color-secondary: #8b5cf6;
+  --color-bg: #fafafa;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+  --color-text: #1f2937;
+  --color-text-secondary: #6b7280;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+/* 滚轮选择器样式 */
+.wheel-container {
+  touch-action: pan-y;
+  user-select: none;
+}
